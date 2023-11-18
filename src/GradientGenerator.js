@@ -33,9 +33,9 @@ const GradientGenerator = () => {
 
   const generateCssCode = () => {
     const vendorPrefixes = ['-moz-', '-webkit-'];
-    const cssCode = `background: linear-gradient(${angle}deg, ${colors.join(', ')});\n`;
+    let cssCode = `background: linear-gradient(${angle}deg, ${colors.join(', ')});\n`;
     vendorPrefixes.forEach((prefix) => {
-      CssCode += `${prefix}background: linear-gradient(${angle}deg, ${colors.join(', ')});\n`;
+      cssCode += `${prefix}background: linear-gradient(${angle}deg, ${colors.join(', ')});\n`;
     });
     return cssCode;
   };
