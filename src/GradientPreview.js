@@ -11,7 +11,7 @@ const GradientPreview = ({ colors, angle }) => {
     background: `linear-gradient(${angle}deg, ${colors.join(', ')})`,
   };
 
-  // Return a div element with the specified class and inline style
+  // Return a div element with the specified class and inline style[']
   return <div className="gradient-preview" style={gradientStyle} />;
 };
 
